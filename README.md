@@ -22,7 +22,7 @@
 "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
   "react-navigation": "^4.3.9",
   "react-navigation-stack": "^2.7.0",
-    ...
-	"react-redux": "^7.2.0",
-    "redux": "^4.0.5"
+  ...
+  "react-redux": "^7.2.0",
+  "redux": "^4.0.5"
 ```
