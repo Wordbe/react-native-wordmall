@@ -11,10 +11,10 @@ import { Ionicons } from '@expo/vector-icons';
 const CartItem = (props) => {
   return (
     <View style={styles.cartItem}>
-      <TexT style={styles.itemData}>
+      <Text style={styles.itemData}>
         <Text style={styles.quantity}>{props.quantity} </Text>
         <Text style={styles.mainText}>{props.title}</Text>
-      </TexT>
+      </Text>
       <View style={styles.itemData}>
         <Text style={styles.mainText}>${props.amount.toFixed(2)}</Text>
         <TouchableOpacity onPress={props.onRemove} style={styles.deleteButton}>
