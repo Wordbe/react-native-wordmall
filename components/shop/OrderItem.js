@@ -19,6 +19,18 @@ const OrderItem = (props) => {
           setShowDetails((prevState) => !prevState);
         }}
       />
+      {showDetails && (
+        <View style={styles.detailItems}>
+          {props.items.map((cartItem) => (
+            <CartItem
+              key={cartItem.productId}
+              quantity={cartItem.quantity}
+              amount={cartItem.sum}
+              title={cartItem.productTitle}
+            />
+          ))}
+        </View>
+      )}
     </View>
   );
 };
@@ -51,6 +63,9 @@ const styles = StyleSheet.create({
     fontFamily: 'open-sans',
     fontSize: 16,
     color: '#888'
+  },
+  detailItems: {
+    width: '100%'
   }
 });
 
